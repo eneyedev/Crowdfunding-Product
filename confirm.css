@@ -1,0 +1,439 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.p1 {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--black);
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+.p2 {
+  font-weight: 500;
+  color: var(--dark-grey);
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.p3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--black);
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+
+.p4 {
+  font-weight: 500;
+  color: var(--dark-grey);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.p5 {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black);
+  line-height: 1.2;
+}
+
+.p6 {
+  color: var(--cyan);
+  font-weight: 500;
+}
+
+.p7 {
+  color: var(--light-grey);
+}
+
+.p8 {
+  font-weight: 500;
+  color: white;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+hr {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  --cyan: hsl(176, 50%, 47%);
+  --dark-cyan: hsl(176, 72%, 28%);
+  --dark-grey: hsl(0, 0%, 48%);
+  --light-grey: lightgrey;
+  --black: hsl(0, 0%, 0%);
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
+.header-hero {
+  background: url("img/image-hero-mobile.jpg") center center/cover;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+}
+
+.left img {
+  width: 12rem;
+}
+
+.hamburger img:first-child {
+  width: 1.6rem;
+}
+
+.hamburger .close {
+  width: 1rem;
+  display: none;
+}
+
+.right:hover .hamburger .close {
+  display: block;
+}
+
+.right:hover .hamburger img:first-child {
+  display: none;
+}
+
+.link {
+  background: #fff;
+  /*padding: 1rem;*/
+  position: absolute;
+  display: none;
+  margin: -20rem auto 0 auto;
+  box-shadow: var(--dark-grey) 0 21rem 900rem 0.3rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  max-width: 85%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.7rem;
+}
+
+.link {
+  margin-top: 2rem;
+}
+
+.right:hover .link {
+  display: block;
+}
+
+.link ul {
+  margin-right: 70%;
+  width: 100%;
+}
+
+.link ul li {
+  cursor: pointer;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.link ul li:nth-child(1),
+.link ul li:nth-child(3),
+.link ul li:nth-child(5) {
+  width: 100%;
+  padding: 1.2rem;
+}
+
+.link ul li:nth-child(1):hover,
+.link ul li:nth-child(3):hover,
+.link ul li:nth-child(5):hover {
+  background: var(--cyan);
+  color: white;
+}
+
+.link ul li:nth-child(1) {
+  margin-top: 0.7rem;
+}
+
+.link ul li:nth-child(5) {
+  margin-bottom: 0.7rem;
+}
+
+.line {
+  background: var(--dark-grey);
+  height: 0.1rem;
+  opacity: 0.2;
+  width: 30rem;
+  margin: 0.7rem auto;
+  max-width: 26.6rem;
+}
+
+/* MAIN */
+.main {
+  background: rgb(250, 250, 250);
+}
+
+.wrapper2 {
+  margin: -4rem auto 0 auto;
+  width: 100%;
+  position: absolute;
+  max-width: 90%;
+  left: 0;
+  right: 0;
+  place-content: center;
+  display: flex;
+}
+
+/* SECTION1 */
+
+.section1 {
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 0.6rem;
+}
+
+.sec1-logo {
+  margin: -19% auto 1.5rem auto;
+  width: 20%;
+  display: block;
+}
+
+.sec1-btn {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.BTP-hover {
+  width: 100%;
+}
+
+.btn-hero {
+  background: var(--cyan);
+  padding: 1rem;
+  border-radius: 5rem;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.btn-hero:hover {
+  background: var(--dark-cyan);
+}
+
+.bookmark-holder .p4 {
+  display: none;
+  margin: auto;
+}
+
+/* Long HOVER */
+.first-hover {
+  background: #ffffff;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  top: -9rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: absolute;
+  margin: auto;
+}
+
+.hover-explanation {
+  width: 100%;
+  max-width: 95%;
+  margin: 1rem auto;
+}
+
+.hover-explanation .p3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+
+.hover-explanation .p3 a img {
+  width: 1.2rem;
+}
+
+.PledgeWithNoReward,
+.BambooStand,
+.BlackEditionStand,
+.MahoganySpecialEdition {
+  border-radius: 0.5rem;
+}
+
+.BambooStand,
+.BlackEditionStand,
+.MahoganySpecialEdition {
+  margin-top: 1.7rem;
+}
+
+.PledgeWithNoReward,
+.BambooStand,
+.BlackEditionStand {
+  border: 1px solid var(--light-grey);
+}
+
+.PledgeWithNoReward:hover,
+.BambooStand:hover,
+.BlackEditionStand:hover {
+  border: 2px solid var(--cyan);
+}
+
+.MahoganySpecialEdition {
+  border: 1px solid var(--light-grey);
+  margin-bottom: 3rem;
+}
+
+.MahoganySpecialEdition .p6 {
+  opacity: 0.5;
+}
+
+.top {
+  display: flex;
+  padding: 1rem 0 0 1rem;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin: auto;
+  max-width: 95%;
+}
+
+.explanation,
+.bottom {
+  width: 100%;
+  max-width: 95%;
+  margin: auto;
+  padding: 0 0 0 1rem;
+}
+
+.radio {
+  width: 1.5rem;
+  height: 2rem;
+  color: var(--cyan);
+}
+
+.explanation {
+  margin-top: 1.5rem;
+}
+
+.top p span {
+  display: block;
+}
+
+.top p span:last-child {
+  margin-top: 0.4rem;
+}
+
+.bottom {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.hover-confirm,
+.hr {
+  display: none;
+}
+
+.BlackEditionStand:hover .hover-confirm,
+.BlackEditionStand:hover .hr,
+.BambooStand:hover .hover-confirm,
+.BambooStand:hover .hr {
+  display: block;
+}
+
+.hover-confirm .p3 {
+  margin-bottom: revert;
+}
+
+.hover-confirm .p4 {
+  font-size: 20px;
+  margin-bottom: revert;
+}
+
+.hover-confirm .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hover-confirm .flex button:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.hover-confirm .flex button:first-child {
+  background: transparent;
+  border: 1px solid var(--light-grey);
+  padding: 0.8rem;
+  width: 30%;
+  border-radius: 5rem;
+  outline: none;
+}
+
+.hover-confirm .flex button:last-child {
+  background: var(--cyan);
+  border: none;
+  padding: 0.8rem;
+  width: 30%;
+  border-radius: 5rem;
+  outline: none;
+}
+
+.confirm {
+  background: white;
+  top: -6.7rem;
+  position: absolute;
+  padding: 1rem;
+  box-shadow: black 0 -2rem 20rem 4rem;
+  left: 0;
+  right: 0;
+  border-radius: 1rem;
+}
+
+.confirm-logo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.confirm .p4 {
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 90%;
+}
+
+.confirm a {
+  padding: 1rem;
+  width: 30%;
+  border-radius: 5rem;
+  font-weight: 600;
+  font-size: 17px;
+  display: block;
+  background: var(--cyan);
+  margin: 0 auto 1rem;
+}
