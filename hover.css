@@ -364,6 +364,12 @@ body {
   gap: 0.5rem;
 }
 
+.bottom-first {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
 .hover-confirm,
 .hr {
   display: none;
@@ -481,6 +487,15 @@ body {
 
 /* Section3 */
 
+.top .bottom {
+  display: none;
+}
+
+.left-flex {
+  display: flex;
+  gap: 1rem;
+}
+
 .bamboo-stand,
 .black-edition-stand,
 .mahogany-special-edition {
@@ -535,7 +550,13 @@ body {
   font-size: 35px;
 }
 
-. @media all and (min-width: 1220px) {
+. @media all and (min-width: 100px) {
+  .first-hover {
+    width: 100%;
+    max-width: 50%;
+    margin: auto;
+  }
+
   .hamburger {
     display: none;
   }
@@ -556,6 +577,25 @@ body {
   .bookmark-holder .p4 {
     display: block;
   }
+
+  .top {
+    display: flex;
+    padding: 1rem 0 0 1rem;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    /*margin: auto;*/
+    max-width: 100%;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .top .bottom {
+    display: block;
+  }
+
   .btn-hero {
     background: var(--cyan);
     padding: 1rem;
@@ -568,5 +608,12 @@ body {
     text-align: center;
     outline: none;
     border: none;
+  }
+
+  .bamboo-stand .top,
+  .black-edition-stand .top,
+  .mahogany-special-edition .top {
+    display: none;
+    justify-content: space-between;
   }
 }
